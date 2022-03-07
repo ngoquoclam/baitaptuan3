@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout demo</title>
+    <style>
+        body {}
+        
+        * {
+            padding: auto;
+            margin: auto;
+        }
+        
+        .wapper {
+            height: 400px;
+            width: 898px;
+            border: 10px;
+        }
+        
+        header {
+            height: 100px;
+            width: 898px;
+            border-width: 10px;
+            background-color: rgb(204, 183, 130);
+        }
+        
+        .content {
+            height: 240px;
+            width: 650px;
+            border-width: 10px;
+            background-color: yellow;
+            margin-top: 30px;
+            margin-right: 50px;
+            margin-left: 50px;
+            margin-bottom: 30px;
+        }    
+        section {
+            height: 300px;
+            width: 150px;
+            border-width: 10px;
+            background-color: rgb(236, 19, 19);
+            float: left;
+        }
+        #menu ul {
+  background: #8AD385;
+  width: 150px;
+  padding: 0;
+  list-style-type: none;
+  text-align: left;
+}
+#menu li {
+ width: auto;
+ height: 40px;
+ line-height: 40px;
+ border-bottom: 1px solid #e8e8e8;
+ padding: 0 1em;
+}
+#menu li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  display: block;
+}
+#menu li:hover {
+  background: #CDE2CD;
+}
+#menu ul li {
+ position: relative;
+}
+#menu .sub-menu {
+ position: absolute;
+ left: 150px;
+ top: 0;
+}
+#menu .sub-menu {
+ position: absolute;
+ left: 150px;
+ top: 0;
+ display: none;
+}
+#menu li:hover .sub-menu {
+ display: block;
+}
+
+        aside{
+            height: 300px;
+            width: 748px;
+            background-color: green;
+            float: left;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="wapper">
+        <header align="center">header</header>
+        <div>
+            <section>
+                <div id="menu">
+                    <ul>
+                    <li><a href="#">special manu</a></li>
+                    <li><a href="#">food menu</a>
+                    <ul class="sub-menu">
+                        <li><a href="#">mì ý</a></li>
+                        <li><a href="#">piza hải sản</a></li>
+                        <li><a href="#">khoai lang</a></li>
+                        </ul>
+                        </li>
+                    <li><a href="#">Sản phẩm khác</a></li>
+                    <li><a href="#">Liên hệ</a></li>
+                    </ul>
+                    </div>
+            </section>
+            <aside>
+                <div align="center" class="content">
+                    content
+                </div>
+            </aside>
+        </div>
+
+    </div>
+</body>
+
+</html>

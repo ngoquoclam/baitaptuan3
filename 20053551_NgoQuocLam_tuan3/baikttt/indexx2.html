@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout demo</title>
+
+</head>
+
+<body>
+    <style>  
+        table, th, td {  
+            border: 1px solid black;  
+            border-collapse: collapse;  
+        }  
+        th, td {  
+            padding: 15px;  
+        }  
+        #menu ul {
+  background: #8AD385;
+  width: 150px;
+  padding: 0;
+  list-style-type: none;
+  text-align: left;
+}
+#menu li {
+ width: auto;
+ height: 40px;
+ line-height: 40px;
+ border-bottom: 1px solid #e8e8e8;
+ padding: 0 1em;
+}
+#menu li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  display: block;
+}
+#menu li:hover {
+  background: #CDE2CD;
+}
+#menu ul li {
+ position: relative;
+}
+#menu .sub-menu {
+ position: absolute;
+ left: 150px;
+ top: 0;
+}
+#menu .sub-menu {
+ position: absolute;
+ left: 150px;
+ top: 0;
+ display: none;
+}
+#menu li:hover .sub-menu {
+ display: block;
+}
+        </style>   
+<table style="width: 898px;">  
+  <tr>
+    <td style="height: 100px;width: 898px;" align="center" colspan="2"><b>header</b></td> <!-- Header -->
+  </tr>
+  <tr>
+    <td style="width: 30%;height: 300px; "><b> <div id="menu">
+      <ul>
+      <li><a href="#">special manu</a></li>
+      <li><a href="#">food menu</a>
+      <ul class="sub-menu">
+          <li><a href="#">mì ý</a></li>
+          <li><a href="#">piza hải sản</a></li>
+          <li><a href="#">khoai lang</a></li>
+          </ul>
+          </li>
+      <li><a href="#">Sản phẩm khác</a></li>
+      <li><a href="#">Liên hệ</a></li>
+      </ul>
+      </div></b></td> <!-- Main menu -->
+    <td> <!-- Content -->
+      <table>
+        <tr>
+          <td style="width: 650px;height: 240px;margin: top 30px;margin-bottom: 30px ;margin-left: 50px;margin-right: 50px; " colspan="0">content</td>
+        </tr>
+        <tr>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  </table> 
+</body>
+
+</html>
